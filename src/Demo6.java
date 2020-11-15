@@ -18,7 +18,7 @@ public class Demo6 {
         //关系运算符 结果为boolean类型
         boolean flag=a!=b;
         System.out.println(flag);
-        //逻辑运算符 短路与&& 逻辑与&
+        //逻辑运算符 短路与&& 逻辑与&  短路或|| 逻辑或|
         System.out.println(a!=b);
     }
 }
