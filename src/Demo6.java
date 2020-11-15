@@ -19,6 +19,6 @@ public class Demo6 {
         boolean flag=a!=b;
         System.out.println(flag);
         //逻辑运算符 短路与&& 逻辑与&
-
+        System.out.println(a!=b);
     }
 }
