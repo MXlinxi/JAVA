@@ -20,27 +20,27 @@ import java.util.Scanner;
 
 public class Demo9 {
     public static void main(String[] args) {
-        Scanner input=new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
         System.out.print("请输入月份：");
-        int month=input.nextInt();
+        int month = input.nextInt();
         //输入月份为旺季
-        if (month>=4&&month<=9){
+        if (month >= 4 && month <= 9) {
             System.out.print("是否有学生证(true/false):");
-            boolean student=input.nextBoolean();
+            boolean student = input.nextBoolean();
             //有学生证
-            if (student){
+            if (student) {
                 System.out.println("30元");
             }
             //没有学生证
-            else{
+            else {
                 System.out.print("请输入年龄：");
-                int age=input.nextInt();
+                int age = input.nextInt();
                 //成人
-                if(age>18){
+                if (age > 18) {
                     System.out.println("60元");
                 }
                 //老人或小孩
-                else{
+                else {
                     System.out.println("40元");
                 }
             }
@@ -49,13 +49,13 @@ public class Demo9 {
         //输入月份为淡季
         else {
             System.out.print("请输入年龄：");
-            int age=input.nextInt();
+            int age = input.nextInt();
             //成人
-            if(age>18){
+            if (age > 18) {
                 System.out.println("40元");
             }
             //老人或小孩
-            else{
+            else {
                 System.out.println("20元");
             }
         }
