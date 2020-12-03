@@ -19,6 +19,7 @@ public class Demo13 {
             System.out.print("请输入姓名:");
             name = input.next();
         }
+
         //案例：不断输入月份，直到输入错误为止
         int month = 1;
         while (month > 0 && month < 11) {
