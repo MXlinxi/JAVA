@@ -40,7 +40,7 @@ public class Demo14 {
             name = input.next();
         } while (!name.equals("exit") && !name.equals("q"));
 
-        //如果老公同意购物，则老婆将一直购物，直到老公说不同意为止
+        //案例：如果老公同意购物，则老婆将一直购物，直到老公说不同意为止
         String advice = "";
         do {
             System.out.println("老婆：可以购物吗？");
@@ -50,7 +50,7 @@ public class Demo14 {
                 System.out.println("老婆：购物中...");
         } while (advice.equals("同意"));
 
-        //统计1-200之间能被5整除但不能被3整除的个数
+        //案例：统计1-200之间能被5整除但不能被3整除的个数
         int m = 1;
         int count = 0;
         do {
