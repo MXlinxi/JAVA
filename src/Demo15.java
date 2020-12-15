@@ -16,7 +16,7 @@ public class Demo15 {
             System.out.println(i);
         }
 
-        //for循环可以初始化多个变量，用逗号隔开；多个条件用逻辑运算符隔开
+        //案例：for循环可以初始化多个变量，用逗号隔开；多个条件用逻辑运算符隔开
         Scanner input = new Scanner(System.in);
         System.out.print("请输入一个整数：");
         int n = input.nextInt();
@@ -24,7 +24,7 @@ public class Demo15 {
             System.out.println(i + "+" + j + "=" + n);
         }
 
-        //输出所有的水仙花数，比如 153=1*1*1+5*5*5+3*3*3
+        //案例：输出所有的水仙花数，比如 153=1*1*1+5*5*5+3*3*3
         System.out.println("水仙花数");
         for (int i = 100; i < 1000; i++) {
             //百位
