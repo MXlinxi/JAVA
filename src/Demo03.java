@@ -6,7 +6,7 @@
  * 4.字符型 char  ASCII码 A-65 a-97 0-48  Unicode2个字节(utf-8可变长度 字母1字节 汉字3字节）
  * 5.大容量转小容量编译不通过
  */
-public class Demo3 {
+public class Demo03 {
     public static void main(String[] args) {
         char a = 100;
         System.out.println(a);
