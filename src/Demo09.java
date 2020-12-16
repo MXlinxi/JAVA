@@ -18,7 +18,7 @@ import java.util.Scanner;
  * 成人(>18) 40块；老人(>70)或小孩(<=18) 20块
  */
 
-public class Demo9 {
+public class Demo09 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.print("请输入月份：");
