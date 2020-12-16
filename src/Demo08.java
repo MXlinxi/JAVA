@@ -6,7 +6,7 @@
  * 4.正数：三码合一
  * 5.位运算(最快的方式) <<左移   >>右移  >>>无符号右移，都补零  ^异或   &与  |或  ~非，最高位参与运算
  */
-public class Demo8 {
+public class Demo08 {
     public static void main(String[] args) {
         //符号位参与运算，将补码转为源码为-7
         System.out.println(~6);
