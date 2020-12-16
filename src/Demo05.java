@@ -1,7 +1,7 @@
 /**
  * String类型与基本数据类型之间的转换
  */
-public class Demo5 {
+public class Demo05 {
     public static void main(String[] args) {
         //基本数据类型转String类型
         int a = 23;
