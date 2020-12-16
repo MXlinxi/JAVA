@@ -4,7 +4,7 @@
  * 2.赋值
  * 3.数据类型
  */
-public class Demo2 {
+public class Demo02 {
     public static void main(String[] args) {
         int a;
         a = 10;
