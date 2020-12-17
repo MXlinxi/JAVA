@@ -11,7 +11,7 @@ public class Demo16 {
         for (int i = 1; i < row; i++) {
             //打印空格
             for (int j = 1; j < i; j++) {
-                System.out.print("\t ");
+                System.out.print(" ");
             }
             //打印*
             for (int j = 1; j < row; j++) {
