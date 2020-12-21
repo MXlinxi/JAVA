@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.util.Scanner;
 
 /**
@@ -9,6 +10,39 @@ import java.util.Scanner;
  */
 public class Demo17 {
     public static void main(String[] args) {
+
+        //案例：简易计算器
+        //当不知道循环条件时，可以设为死循环，在要break前改变Boolean的值
+        Scanner input = new Scanner(System.in);
+        int a = 2;
+        int b = 2;
+        char cal;
+        boolean flag = true;
+        do {
+            System.out.println("---------------计算器------------------");
+            System.out.println("1.加\t2.减\t3.乘\t4.除\t5.退出");
+            //使用char接收增加容错性
+            cal = input.next().charAt(0);
+            switch (cal) {
+                case '1':
+                    System.out.println("a" + "+" + "b" + "=" + (a + b));
+                    break;
+                case '2':
+                    System.out.println("a" + "-" + "b" + "=" + (a - b));
+                    break;
+                case '3':
+                    System.out.println("a" + "*" + "b" + "=" + (a * b));
+                    break;
+                case '4':
+                    System.out.println("a" + "/" + "b" + "=" + (a / b));
+                    break;
+                case '5':
+                    System.out.println("退出计算");
+                    //退出do-while循环
+                    flag = false;
+                    break;
+            }
+        } while (flag);
 
         //案例：使用标签退出外层循环
         label:
@@ -23,7 +57,7 @@ public class Demo17 {
         }
 
         //案例:使用boolean标签推出外层循环
-        boolean flag = true;
+        //boolean flag = true;
         for (int i = 1; flag && i < 10; i++) {
             for (int j = 1; j < 10; j++) {
                 System.out.println("-----");
@@ -50,7 +84,7 @@ public class Demo17 {
 
         //案例：实现登录验证，有三次机会，正确输入显示登录成功，否则显示还有几次机会
         System.out.println("登录");
-        Scanner input = new Scanner(System.in);
+        //Scanner input = new Scanner(System.in);
         for (int i = 1; i <= 3; i++) {
             System.out.print("姓名：");
             String name = input.next();
