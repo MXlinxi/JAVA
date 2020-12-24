@@ -9,16 +9,20 @@ public class Demo18 {
         Scanner input = new Scanner(System.in);
 
         //案例：随机猜数游戏（有十次机会猜随机数）
-        System.out.print("-------随机猜数游戏-------");
+        System.out.println("-------随机猜数游戏-------");
         boolean flag = true;
+        int readom = (int) (Math.random() * 100 + 1);
         int k = 1;
         do {
             System.out.print("请输入：");
             //产生1-100的随机数
-            int readom = (int) (Math.random() * 100 + 1);
             int n = input.nextInt();
             if (readom == n || k == 10) {
                 flag = false;
+            } else if (readom > n) {
+                System.out.println("猜小了");
+            } else {
+                System.out.println("猜大了");
             }
             k += 1;
         } while (flag);
