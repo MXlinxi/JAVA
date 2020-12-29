@@ -13,5 +13,10 @@ public class Demo20 {
         array[0] = 6;
         //通过下标访问，注意数组越界异常（属于运行时异常）
         System.out.println(array[0]);
+        //使用循环来给数组赋值/查看数组元素
+        for(int i=0;i<array.length;i++){
+            array[i]=(int)(Math.random()*100)+1;
+            System.out.println(array[i]);
+        }
     }
 }
